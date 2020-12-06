@@ -36,4 +36,14 @@ public class SortAlgorithmTest {
         Assert.assertArrayEquals(data2, expected2);
         Assert.assertArrayEquals(data3, expected3);
     }
+
+    @Test
+    public void testQuickSortAlgorithm() {
+        new QuickSortAlgorithm().sort(data1);
+        new QuickSortAlgorithm().sort(data2);
+        new QuickSortAlgorithm().sort(data3);
+        Assert.assertArrayEquals(data1, expected1);
+        Assert.assertArrayEquals(data2, expected2);
+        Assert.assertArrayEquals(data3, expected3);
+    }
 }
