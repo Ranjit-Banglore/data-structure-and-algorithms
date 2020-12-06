@@ -1,7 +1,5 @@
 package algorithms;
 
-import java.util.Arrays;
-
 /**
  * f(n)=f(n-1)+f(n-2)
  * f(0)=1
@@ -9,18 +7,10 @@ import java.util.Arrays;
  * n=4
  * 1,1,2,3
  */
-public class FibonacciSeries {
-    public static void main(String[] args) {
-        Arrays.stream(new FibonacciSeries().getFibonacciSeries(10))
-                .forEach(System.out::println);
-    }
+public class FibonacciSeriesAlgorithm {
+    //generate n number of elements of Fibonacci Series.
 
-    /**
-     * Takes argument as number of elements and returns the Fibonacci series
-     * @param number
-     * @return
-     */
-    private int[] getFibonacciSeries(int number) {
+    public int[] generateNElements(int number) {
         int[] series = new int[number];
         //1,1,2,3
         while (number > 0) {
@@ -32,6 +22,7 @@ public class FibonacciSeries {
 
     /**
      * fib(3)= fib2+fib(1)= (fib(1)+fib(0))+fib(1)=1+1+1=3
+     *
      * @param p1
      * @return
      */
