@@ -15,7 +15,6 @@ public class QuickSortAlgorithm {
     }
 
     //arrange elements left to pivot lesser than its value and right to pivot
-    //greater than it's value;
     private int partition(int[] array, int start, int end) {
         int partitionIdx = start;
         int pivot = array[end];
